@@ -46,13 +46,14 @@
         }
         .apresentacao{
             width: 100%;
-            height: 75vh;    
+            height: 75vh; 
+             
         }
         .video-apresentacao{
             width: 100%;
             height: 75vh;
             object-fit: cover;
-            filter: brightness(25%);
+           
         }
         .titulo-apresentacao{
             font-size: 3.5rem;/* 4 * tamanho base da fonte */
@@ -97,7 +98,9 @@
             border-radius: 10px; 
             font-size: 1.4rem; 
             background: rgb(246, 197, 3);
-            background: linear-gradient(219deg, rgb(248, 151, 5) 0%, rgba(238, 149, 46, 0.271) 39%);       
+            background: linear-gradient(219deg, rgb(248, 151, 5) 0%, rgba(238, 149, 46, 0.271) 39%); 
+            animation-name: teste;
+            animation-duration: 2s;       
         }
         .servicos-bloco:hover{
            background: rgb(255, 88, 54);
@@ -115,6 +118,9 @@
             flex-wrap: wrap;
             gap: 15px;
             justify-content:space-evenly;
+            animation-name: teste;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
         } 
         .feedback-bloco{
             flex: 1 1 250px;
@@ -224,9 +230,25 @@
             flex-direction: column;
             row-gap: 15px;
         }
-
+        
 
     }
+    @keyframes teste {
+            0%{
+              opacity: 0%;
+              scale: 0.1;
+            }
+            50%{
+                opacity:60%;
+                scale: 0.6;
+            }
+            100%{
+                opacity: 100%;
+                scale: 1;
+            }
+            
+        }
+
 
     </style>
 </head>
@@ -299,6 +321,8 @@
     </footer>
     <div id="whats">
         <a href=""><img src="logo.png" alt=""></a>
+        ]
+
     </div>
 </body>
 </html>

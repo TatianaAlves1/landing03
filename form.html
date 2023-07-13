@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{width: 100%;height: 100vh; background-color: gainsboro; display: flex;justify-content: center;align-items: center;}
+        .bloco{
+            width: 450px;height: 220px;background-color: aqua;
+            animation-name: descida;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+        }
+        @keyframes descida {
+            from{
+                transform: translateY(-400px);
+                opacity: 0;
+
+                
+            }
+            to{
+                transform: translateY(0px);
+                opacity: 1;
+                
+            }
+
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="bloco">
+
+    </div>
+   </div>
+</body>
+</html>
